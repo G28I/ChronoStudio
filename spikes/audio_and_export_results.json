@@ -1,0 +1,36 @@
+{
+  "audio_realtime_evaluation": {
+    "256": {
+      "buffer_duration_ms": 5.33,
+      "mean_callback_ms": 0.0197,
+      "max_callback_ms": 0.8169,
+      "headroom_pct": 99.6,
+      "underruns": 0
+    },
+    "512": {
+      "buffer_duration_ms": 10.67,
+      "mean_callback_ms": 0.0134,
+      "max_callback_ms": 0.0216,
+      "headroom_pct": 99.9,
+      "underruns": 0
+    },
+    "1024": {
+      "buffer_duration_ms": 21.33,
+      "mean_callback_ms": 0.0189,
+      "max_callback_ms": 0.0282,
+      "headroom_pct": 99.9,
+      "underruns": 0
+    }
+  },
+  "export_timeline_revalidation": {
+    "raw_encoder_only": {
+      "nvenc_fps": 95.3,
+      "software_fps": 299.9
+    },
+    "full_timeline_with_effects": {
+      "nvenc_fps": 173.9,
+      "software_fps": 231.5,
+      "filtergraph_overhead_factor": 0.55
+    }
+  }
+}

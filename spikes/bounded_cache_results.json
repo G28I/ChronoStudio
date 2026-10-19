@@ -1,0 +1,30 @@
+{
+  "ipc_evaluation": {
+    "subprocess_pipe": {
+      "fps": 49.2,
+      "time_s": 2.438
+    },
+    "pyav_direct": {
+      "fps": 124.6,
+      "time_s": 0.963
+    },
+    "pyav_speedup_factor": 2.53
+  },
+  "bounded_cache_evaluation": {
+    "cache_budget_mb": 64,
+    "peak_cache_usage_mb": 63.28,
+    "cold_seek_ms": {
+      "mean": 32.42,
+      "min": 27.16,
+      "max": 41.98
+    },
+    "warm_seek_ms": {
+      "mean": 0.0031,
+      "max": 0.009
+    }
+  },
+  "seek_cancellation": {
+    "cancelled": 9,
+    "executed": 1
+  }
+}

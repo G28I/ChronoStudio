@@ -1,0 +1,13 @@
+{
+  "name": "chronostudio",
+  "version": "0.1.0",
+  "description": "ChronoStudio Professional Desktop Video Editor",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test:electron": "node electron/test_electron_shell.js"
+  },
+  "devDependencies": {
+    "electron": "^44.9.0"
+  }
+}

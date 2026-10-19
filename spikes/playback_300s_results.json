@@ -1,0 +1,53 @@
+{
+  "test_metadata": {
+    "duration_target_seconds": 300.0,
+    "actual_wall_clock_seconds": 300.03,
+    "total_expected_frames": 18000,
+    "target_fps": 60,
+    "resolution": "1920x1080",
+    "audio_spec": "48kHz stereo 32-bit float"
+  },
+  "frame_metrics": {
+    "expected_frames": 18000,
+    "presented_frames": 18001,
+    "dropped_frames": 6,
+    "drop_rate_percent": 0.033,
+    "achieved_fps": 60.0
+  },
+  "presentation_intervals_ms": {
+    "target_interval_ms": 16.67,
+    "mean_interval_ms": 16.67,
+    "std_interval_ms": 0.82,
+    "min_interval_ms": 4.1,
+    "max_interval_ms": 39.2,
+    "jitter_ms": 0.981
+  },
+  "av_sync": {
+    "mean_drift_ms": 0.0,
+    "max_drift_ms": 0.0,
+    "sync_status": "LOCKED (< 1.0 ms)"
+  },
+  "system_telemetry": {
+    "cpu_percent": {
+      "mean": 17.7,
+      "peak": 68.6
+    },
+    "ram_mb": {
+      "mean": 71.8,
+      "peak": 71.9
+    },
+    "gpu_percent": {
+      "mean": 0.0,
+      "peak": 0.0
+    },
+    "vram_mb": {
+      "mean": 0.0,
+      "peak": 0.0
+    },
+    "cache_use_mb": 63.3
+  },
+  "audit_verdict": {
+    "status": "FAIL",
+    "full_300s_sustained": true
+  }
+}

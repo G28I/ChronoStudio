@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChronoStudio — Professional Video Editor (Phase 1)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>ChronoStudio</h1>
+      <span class="badge">Phase 1 Essential Cut</span>
+    </div>
+    <div class="top-actions">
+      <button id="btn-import">Import Media</button>
+      <button id="btn-save">Save Project</button>
+      <button id="btn-reopen">Reopen Project</button>
+      <button id="btn-crash-test" class="danger">Simulate Crash</button>
+      <button id="btn-recover" class="primary">Recover Session</button>
+      <button id="btn-export" class="primary">Export MP4</button>
+    </div>
+  </header>
+
+  <div class="main-view">
+    <!-- Project Bin -->
+    <div class="panel">
+      <div class="panel-header">PROJECT BINS & ASSETS</div>
+      <div class="bin-content" id="bin-list">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <!-- Program Monitor -->
+    <div class="monitor-area">
+      <canvas id="program-canvas" width="1280" height="720"></canvas>
+      <div class="transport-bar">
+        <button id="btn-step-back">&lt;| (Prev Frame)</button>
+        <button id="btn-play" class="primary">&#9654; Play (Space)</button>
+        <button id="btn-step-fwd">|&gt; (Next Frame)</button>
+        <div class="timecode-display" id="tc-display">00:00:00:00</div>
+      </div>
+    </div>
+
+    <!-- Audio Meters -->
+    <div class="vu-area">
+      <div class="panel-header" style="width: 100%; text-align: center; margin-bottom: 8px;">MASTER VU</div>
+      <div style="display: flex; gap: 8px; flex: 1; align-items: stretch;">
+        <div class="vu-meter-bar"><div class="vu-fill" id="vu-l"></div></div>
+        <div class="vu-meter-bar"><div class="vu-fill" id="vu-r"></div></div>
+      </div>
+      <div style="font-family: monospace; font-size: 11px; margin-top: 6px; color: #888;">-12 dB</div>
+    </div>
+  </div>
+
+  <!-- Timeline Panel -->
+  <div class="timeline-panel">
+    <div class="timeline-toolbar">
+      <button id="tool-select" class="active">Selection Tool (V)</button>
+      <button id="tool-razor">Razor Blade (C)</button>
+      <button id="tool-ripple-del">Ripple Delete</button>
+      <button id="tool-snap" class="active">Snapping: ON (S)</button>
+      <div style="margin-left: auto; font-size: 11px; color: #888;" id="status-readout">Ready</div>
+    </div>
+
+    <div class="timeline-workspace">
+      <!-- Track Headers -->
+      <div class="track-headers">
+        <div class="track-header" style="height: 30px; background: #16161c;">TIMECODE</div>
+        <div class="track-header"><span>V2 (Overlay)</span></div>
+        <div class="track-header"><span>V1 (Base)</span></div>
+        <div class="track-header"><span>A1 (Audio)</span></div>
+        <div class="track-header"><span>A2 (Audio)</span></div>
+      </div>
+
+      <!-- Timeline Canvas Container -->
+      <div class="timeline-canvas-container" id="tl-container">
+        <canvas id="timeline-canvas" width="2400" height="230"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
